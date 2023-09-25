@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header></header>
+
+        <main>
+            <section class="cotizaciones">
+                <h2>Cotizacion Dólar Blue</h2>
+                <p id="fecha"></p>
+                <h3 id="compra"></h3>
+                <h3 id="venta"></h3>
+            </section>
+            <section class="conversor">
+                <h2>Conversor</h2>
+                <label for="option">Elija la operación</label>
+                <select name="option" id="option">
+                    <option value="1">Pesos a Dólar Blue</option>
+                    <option value="2">Dólar Blue a Pesos</option>
+                </select>
+                <label for="monto">Monto</label>
+                <input type="text" name="monto" id="monto" placeholder="Monto">
+                <button id="btn">Calcular</button>
+                <label for="resultado">Resultado</label>
+                <input type="text" name="resultado" id="resultado" placeholder="Resultado">
+            </section>
+        </main>
+
+        <footer></footer>
+
+        <script src="./js/calculos.js"></script>
+    </body>
+    </html>
