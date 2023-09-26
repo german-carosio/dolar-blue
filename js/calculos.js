@@ -8,6 +8,8 @@ const venta = document.getElementById('venta');
 const btn = document.getElementById('btn');
 const option = document.getElementById('option');
 
+document.getElementById('monto').focus();
+
 const verdes = async()=> {
     //try
     try {
@@ -16,15 +18,15 @@ const verdes = async()=> {
             header: 'Accept: application/json'
         });
 
-        console.log(response);
-        console.log(response.status)
+        //console.log(response);
+        //console.log(response.status)
 
         //IFs de STATUS
         if (response.status === 200) {
               //acceder a la información
             const data = await response.json();
 
-            console.log(data);
+            //console.log(data);
 
             //Fecha de actualizacion traida de API
             date = new Date(`${data.fechaActualizacion}`);
