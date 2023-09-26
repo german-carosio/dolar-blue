@@ -16,14 +16,15 @@ const verdes = async()=> {
             header: 'Accept: application/json'
         });
 
-        //console.log(response);
+        console.log(response);
+        console.log(response.status)
 
         //IFs de STATUS
         if (response.status === 200) {
               //acceder a la información
             const data = await response.json();
 
-            //console.log(data);
+            console.log(data);
 
             //Fecha de actualizacion traida de API
             date = new Date(`${data.fechaActualizacion}`);
