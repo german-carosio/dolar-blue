@@ -49,6 +49,7 @@ button {
     padding: 10px 15px;
     border-radius: 5px;
     font-size: var(--fuente-normal);
+    cursor: pointer;
 }
 
 input, select {
